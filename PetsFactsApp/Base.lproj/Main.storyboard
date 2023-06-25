@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="PetsFactsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="5Vm-CC-lhz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwJ-Ta-PBI">
+                                <rect key="frame" x="135" y="70" width="144" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We gether top 6 ineteresting facts about catd and dogs:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHl-ko-9Lm">
+                                <rect key="frame" x="30" y="156" width="354" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRI-nf-ajY">
+                                <rect key="frame" x="60" y="274" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.71236067622814359" blue="0.67699726374781655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="62d-qk-bB6"/>
+                                    <constraint firstAttribute="height" constant="120" id="Tpb-mV-qfi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CAT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="catButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsT-HA-zVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYG-sU-1sp">
+                                <rect key="frame" x="234" y="274" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.62747531424823411" green="0.80954248559770348" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="YDl-aD-qFk"/>
+                                    <constraint firstAttribute="height" constant="120" id="vW4-OK-YQJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DOG"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dogButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sv4-Ww-HV4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fYG-sU-1sp" secondAttribute="trailing" constant="60" id="Bby-oh-htx"/>
+                            <constraint firstItem="YHl-ko-9Lm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="CiO-8c-lxw"/>
+                            <constraint firstItem="5Vm-CC-lhz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GYY-Qg-qj8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Vm-CC-lhz" secondAttribute="bottom" id="NyT-bl-QuJ"/>
+                            <constraint firstItem="pRI-nf-ajY" firstAttribute="top" secondItem="YHl-ko-9Lm" secondAttribute="bottom" constant="70" id="POe-o4-5sG"/>
+                            <constraint firstItem="dwJ-Ta-PBI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qcd-TS-sNc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Vm-CC-lhz" secondAttribute="trailing" id="Uuc-mU-2qS"/>
+                            <constraint firstItem="5Vm-CC-lhz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="chR-pP-LZ1"/>
+                            <constraint firstItem="YHl-ko-9Lm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqT-uG-Y68"/>
+                            <constraint firstItem="pRI-nf-ajY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="eJW-g1-8m7"/>
+                            <constraint firstAttribute="trailing" secondItem="YHl-ko-9Lm" secondAttribute="trailing" constant="30" id="fN5-Gx-35w"/>
+                            <constraint firstItem="fYG-sU-1sp" firstAttribute="top" secondItem="YHl-ko-9Lm" secondAttribute="bottom" constant="70" id="jWc-eO-WLP"/>
+                            <constraint firstItem="dwJ-Ta-PBI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="upd-vd-XJh"/>
+                            <constraint firstItem="YHl-ko-9Lm" firstAttribute="top" secondItem="dwJ-Ta-PBI" secondAttribute="bottom" constant="50" id="zwU-KK-BYq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.858695652173921"/>
+        </scene>
+        <!--Information View Controller-->
+        <scene sceneID="z4n-UZ-wGX">
+            <objects>
+                <viewController storyboardIdentifier="InformationViewController" id="4Pb-j4-emb" customClass="InformationViewController" customModule="PetsFactsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rIg-sn-l8b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-5d-t79" userLabel="BackgroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjI-la-rRl">
+                                <rect key="frame" x="168.66666666666666" y="100" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMa-Je-Did">
+                                <rect key="frame" x="20" y="196" width="374" height="520"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5nK-O7-L6y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BjI-la-rRl" firstAttribute="top" secondItem="5nK-O7-L6y" secondAttribute="top" constant="100" id="1gZ-Xl-KjY"/>
+                            <constraint firstItem="5nK-O7-L6y" firstAttribute="bottom" secondItem="oMa-Je-Did" secondAttribute="bottom" constant="20" id="9cr-Ys-ezd"/>
+                            <constraint firstItem="BjI-la-rRl" firstAttribute="centerX" secondItem="rIg-sn-l8b" secondAttribute="centerX" id="Gy7-uG-4jD"/>
+                            <constraint firstItem="YNq-5d-t79" firstAttribute="top" secondItem="5nK-O7-L6y" secondAttribute="top" id="QpN-gd-g5P"/>
+                            <constraint firstItem="5nK-O7-L6y" firstAttribute="trailing" secondItem="YNq-5d-t79" secondAttribute="trailing" id="ZEH-Is-F0j"/>
+                            <constraint firstItem="oMa-Je-Did" firstAttribute="leading" secondItem="5nK-O7-L6y" secondAttribute="leading" constant="20" id="abQ-dO-50W"/>
+                            <constraint firstItem="5nK-O7-L6y" firstAttribute="trailing" secondItem="oMa-Je-Did" secondAttribute="trailing" constant="20" id="fBJ-v0-Z49"/>
+                            <constraint firstItem="oMa-Je-Did" firstAttribute="top" secondItem="BjI-la-rRl" secondAttribute="bottom" constant="60" id="ltQ-RL-FjM"/>
+                            <constraint firstItem="5nK-O7-L6y" firstAttribute="bottom" secondItem="YNq-5d-t79" secondAttribute="bottom" id="reR-MY-LLO"/>
+                            <constraint firstItem="YNq-5d-t79" firstAttribute="leading" secondItem="5nK-O7-L6y" secondAttribute="leading" id="zEL-Tn-YG5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="YNq-5d-t79" id="HKw-k7-wRv"/>
+                        <outlet property="containerView" destination="oMa-Je-Did" id="mLr-bA-YUu"/>
+                        <outlet property="titleLabel" destination="BjI-la-rRl" id="1F0-r3-wuH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlZ-jk-y7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main" width="564" height="1002"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
