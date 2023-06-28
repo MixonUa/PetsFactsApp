@@ -16,6 +16,12 @@
 		9325516B2A48177000BA02EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932551692A48177000BA02EF /* LaunchScreen.storyboard */; };
 		9325517E2A481A3F00BA02EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325517D2A481A3F00BA02EF /* MainViewController.swift */; };
 		932551812A481A5700BA02EF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932551802A481A5700BA02EF /* InformationViewController.swift */; };
+		933F47822A48D17700C91770 /* NetworkFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F47812A48D17700C91770 /* NetworkFetchService.swift */; };
+		934B103B2A4C6EE5002F3BCA /* FactsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B103A2A4C6EE5002F3BCA /* FactsCollectionView.swift */; };
+		934B10442A4C71C0002F3BCA /* FactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B10432A4C71C0002F3BCA /* FactCollectionViewCell.swift */; };
+		93DB05492A48C55100233DAE /* CatModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB05482A48C55100233DAE /* CatModell.swift */; };
+		93DB054C2A48C55B00233DAE /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB054B2A48C55B00233DAE /* DogModel.swift */; };
+		93DB054F2A48C80E00233DAE /* NetworkManagerAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DB054E2A48C80E00233DAE /* NetworkManagerAlamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		9325516C2A48177000BA02EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9325517D2A481A3F00BA02EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		932551802A481A5700BA02EF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		933F47812A48D17700C91770 /* NetworkFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchService.swift; sourceTree = "<group>"; };
+		934B103A2A4C6EE5002F3BCA /* FactsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionView.swift; sourceTree = "<group>"; };
+		934B10432A4C71C0002F3BCA /* FactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCollectionViewCell.swift; sourceTree = "<group>"; };
+		93DB05482A48C55100233DAE /* CatModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModell.swift; sourceTree = "<group>"; };
+		93DB054B2A48C55B00233DAE /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
+		93DB054E2A48C80E00233DAE /* NetworkManagerAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAlamofire.swift; sourceTree = "<group>"; };
 		FD6E401B1844AD9774B63EB7 /* Pods_PetsFactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetsFactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +115,12 @@
 		9325517B2A4819F500BA02EF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				934B10422A4C71A4002F3BCA /* Cells */,
+				93DB05482A48C55100233DAE /* CatModell.swift */,
+				93DB054B2A48C55B00233DAE /* DogModel.swift */,
+				93DB054E2A48C80E00233DAE /* NetworkManagerAlamofire.swift */,
+				933F47812A48D17700C91770 /* NetworkFetchService.swift */,
+				934B103A2A4C6EE5002F3BCA /* FactsCollectionView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +136,14 @@
 				9325515D2A48176F00BA02EF /* SceneDelegate.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		934B10422A4C71A4002F3BCA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				934B10432A4C71C0002F3BCA /* FactCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F17398D2A08BF2B5AF6AAD01 /* Pods */ = {
@@ -245,9 +271,15 @@
 			files = (
 				9325515C2A48176F00BA02EF /* AppDelegate.swift in Sources */,
 				9325515E2A48176F00BA02EF /* SceneDelegate.swift in Sources */,
+				933F47822A48D17700C91770 /* NetworkFetchService.swift in Sources */,
 				932551662A48176F00BA02EF /* PetsFactsApp.xcdatamodeld in Sources */,
 				9325517E2A481A3F00BA02EF /* MainViewController.swift in Sources */,
 				932551812A481A5700BA02EF /* InformationViewController.swift in Sources */,
+				934B103B2A4C6EE5002F3BCA /* FactsCollectionView.swift in Sources */,
+				93DB054F2A48C80E00233DAE /* NetworkManagerAlamofire.swift in Sources */,
+				934B10442A4C71C0002F3BCA /* FactCollectionViewCell.swift in Sources */,
+				93DB05492A48C55100233DAE /* CatModell.swift in Sources */,
+				93DB054C2A48C55B00233DAE /* DogModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
