@@ -44,6 +44,6 @@ extension FactsCollectionView: UICollectionViewDelegate {
 
 extension FactsCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width/2 - 10, height: 50)
+        CGSize(width: collectionView.frame.width/2 - 10, height: 60)
     }
 }

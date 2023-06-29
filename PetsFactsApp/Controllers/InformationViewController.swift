@@ -75,7 +75,7 @@ extension InformationViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idCell", for: indexPath) as? FactsCollectionViewCell
         else { return UICollectionViewCell() }
         
-        let factLableText = catFacts.isEmpty ? "Dog fact №\(indexPath.row)" : "Cat fact №\(indexPath.row)"
+        let factLableText = catFacts.isEmpty ? "Dog fact №\(indexPath.row+1)" : "Cat fact №\(indexPath.row+1)"
         cell.cellConfigure(factLableText: factLableText)
         return cell
     }
