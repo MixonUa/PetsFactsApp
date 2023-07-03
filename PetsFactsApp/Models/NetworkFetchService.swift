@@ -8,7 +8,7 @@
 import Foundation
 
 class NetworkFetchService {
-    let networkManager : NetworkManagerAlamofire
+    private let networkManager : NetworkManagerAlamofire
     init(networkManager: NetworkManagerAlamofire = NetworkManagerAlamofire()) {
         self.networkManager = networkManager
     }

@@ -14,8 +14,11 @@ class InformationViewController: UIViewController {
     private let collectionView = FactsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
     var pet: String?
-    var catFacts : [CatModel] = []
-    var dogFacts : [DogModel] = []
+    var isCatFactsAsked: Bool = false
+    var catFacts: [CatModel] = []
+    var dogFacts: [DogModel] = []
+    var catStoredFacts: [CatFact]?
+    var dogStoredFacts: [DogFact]?
 
     
     override func viewDidLoad() {
@@ -24,12 +27,12 @@ class InformationViewController: UIViewController {
         setupViews()
         setDelegates()
         setConstraints()
-        
     }
 
     private func setupViews() {
         containerView.addSubview(collectionView)
-        backgroundImage.image = catFacts.isEmpty ? UIImage(named: "dog") : UIImage(named: "cat")
+        backgroundImage.image = isCatFactsAsked ? UIImage(named: "cat") : UIImage(named: "dog")
+        isCatFactsAsked = false
     }
     
     private func setDelegates() {
