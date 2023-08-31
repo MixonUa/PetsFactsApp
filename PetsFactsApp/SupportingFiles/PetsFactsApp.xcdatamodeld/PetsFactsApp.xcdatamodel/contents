@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CatFact" representedClassName="CatFact" syncable="YES" codeGenerationType="class">
-        <attribute name="color" optional="YES" attributeType="String"/>
-        <attribute name="fact" optional="YES" attributeType="String"/>
-        <attribute name="likes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    <entity name="CatFact" representedClassName="CatFact" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DogFact" representedClassName="DogFact" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="CatFact" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="CatFact" positionX="-54" positionY="-9" width="128" height="44"/>
+        <element name="DogFact" positionX="-36" positionY="9" width="128" height="44"/>
     </elements>
 </model>

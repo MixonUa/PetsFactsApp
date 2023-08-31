@@ -10,6 +10,7 @@ import Alamofire
 
 class MainViewController: UIViewController {
     let manager = NetworkFetchService()
+    let dataManager = CoreDataManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class MainViewController: UIViewController {
         guard let destinationVC = self.storyboard?.instantiateViewController(identifier: "InformationViewController") as? InformationViewController else { return }
         destinationVC.pet = "CAT"
         
-        let storedData = CoreDataManager.shared.fetchAllCatFacts()
+        let storedData = dataManager.fetchCatData()
         if !storedData.isEmpty {
             destinationVC.catStoredFacts = storedData
             destinationVC.isCatFactsAsked = true

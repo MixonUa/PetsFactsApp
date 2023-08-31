@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/mihailfrolov/Documents/GitHub/CatFactRev/PetsFactsApp/CatFact+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
       location = "group:PetsFactsApp.xcodeproj">
    </FileRef>
    <FileRef
