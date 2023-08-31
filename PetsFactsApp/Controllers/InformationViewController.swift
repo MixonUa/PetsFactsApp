@@ -51,12 +51,24 @@ class InformationViewController: UIViewController {
 }
 
 //MARK: - SelectedFactProtocol
+
+extension UIAlertController {
+
+    //Set background color of UIAlertController
+    func setBackgroundColor(color: UIColor) {
+        if let bgView = self.view.subviews.first, let groupView = bgView.subviews.first, let contentView = groupView.subviews.first {
+            contentView.backgroundColor = color
+        }
+    }
+}
 extension InformationViewController: SelectedFactProtocol {
     func selectedFact(indexPath: IndexPath) {
         let title = catFacts.isEmpty ?  dogFacts[indexPath.row].name : catFacts[indexPath.row].name
         let message = catFacts.isEmpty ?  dogFacts[indexPath.row].fact : catFacts[indexPath.row].fact
+        let color = catFacts.isEmpty ? dogFacts[indexPath.row].color : catFacts[indexPath.row].color
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default)
+        alertController.setBackgroundColor(color: UIColor(named: color) ?? UIColor.white)
         alertController.addAction(ok)
         present(alertController, animated: true, completion: nil)
     }

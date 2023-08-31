@@ -152,10 +152,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx8-yz-DNx">
-                                <rect key="frame" x="60" y="236" width="294" height="44"/>
+                                <rect key="frame" x="60" y="207" width="294" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="aPo-wb-8Z1"/>
+                                    <constraint firstAttribute="height" constant="44" id="DrG-nn-CpO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Download">
@@ -170,22 +170,45 @@
                                     <action selector="downloadButtonPressed:" destination="cPT-JD-7Ky" eventType="touchUpInside" id="6uJ-Rt-5WL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e48-Lu-Dw9">
+                                <rect key="frame" x="60" y="283" width="294" height="44"/>
+                                <color key="backgroundColor" red="0.087264280109999995" green="0.69960838859999996" blue="0.18902992430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eiT-XJ-D6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="downloadButtonPressed:" destination="cPT-JD-7Ky" eventType="touchUpInside" id="Byo-t9-sH3"/>
+                                    <action selector="saveButtonPressed:" destination="cPT-JD-7Ky" eventType="touchUpInside" id="83g-Ln-qI9"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No stored data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-zx-bEt">
-                                <rect key="frame" x="60" y="172" width="294" height="24"/>
+                                <rect key="frame" x="60" y="147" width="294" height="24"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To download new data, please clear your storage:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afg-lC-6Ps">
-                                <rect key="frame" x="50" y="380" width="314" height="48"/>
+                                <rect key="frame" x="50" y="351" width="314" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="C3s-4V-4c3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgL-hI-zsM">
-                                <rect key="frame" x="60" y="468" width="294" height="44"/>
+                                <rect key="frame" x="60" y="439" width="294" height="44"/>
                                 <color key="backgroundColor" red="0.80264528833254423" green="0.51560855155660845" blue="0.30118803298354996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="KgF-q0-6xP"/>
+                                    <constraint firstAttribute="height" constant="44" id="ULk-P4-BzO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Clear storage">
@@ -200,33 +223,93 @@
                                     <action selector="clearStorageButoonPressed:" destination="cPT-JD-7Ky" eventType="touchUpInside" id="E8n-67-NH7"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3a-s7-v2l">
+                                <rect key="frame" x="20" y="520" width="374" height="196"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InfoTableViewCell" id="I6y-7R-ZSt" customClass="InfoCell" customModule="PetsFactsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6y-7R-ZSt" id="WmJ-GC-kl3">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-dn-eL2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="1Pf-z9-o9j"/>
+                                                        <constraint firstAttribute="width" constant="60" id="Jw0-xz-I7Y"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imo-Qf-USJ">
+                                                    <rect key="frame" x="70" y="0.0" width="304" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="3Go-GF-hNs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="imo-Qf-USJ" firstAttribute="leading" secondItem="PRV-dn-eL2" secondAttribute="trailing" constant="10" id="jus-vN-9dg"/>
+                                                <constraint firstItem="PRV-dn-eL2" firstAttribute="top" secondItem="WmJ-GC-kl3" secondAttribute="top" id="nFY-Dq-4C1"/>
+                                                <constraint firstItem="PRV-dn-eL2" firstAttribute="leading" secondItem="WmJ-GC-kl3" secondAttribute="leading" id="rBD-sJ-bRq"/>
+                                                <constraint firstItem="imo-Qf-USJ" firstAttribute="top" secondItem="WmJ-GC-kl3" secondAttribute="top" id="vrC-Eg-G6a"/>
+                                                <constraint firstAttribute="trailing" secondItem="imo-Qf-USJ" secondAttribute="trailing" id="yyt-dr-G1s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="factLabel" destination="imo-Qf-USJ" id="WJd-m2-CVd"/>
+                                            <outlet property="nameLabel" destination="PRV-dn-eL2" id="VRn-I6-ssh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L1s-We-d0d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="Dwg-zx-bEt" secondAttribute="trailing" constant="60" id="3eM-DL-V0N"/>
+                            <constraint firstItem="c3a-s7-v2l" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="20" id="4y6-p1-rxk"/>
                             <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="Fea-Lg-bWU" secondAttribute="trailing" constant="60" id="CHE-h7-knO"/>
-                            <constraint firstItem="Hx8-yz-DNx" firstAttribute="top" secondItem="Dwg-zx-bEt" secondAttribute="bottom" constant="40" id="D0W-Xz-5Tf"/>
-                            <constraint firstItem="afg-lC-6Ps" firstAttribute="top" secondItem="Hx8-yz-DNx" secondAttribute="bottom" constant="100" id="GiE-va-3ZO"/>
-                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="afg-lC-6Ps" secondAttribute="trailing" constant="50" id="J6W-JC-K6K"/>
+                            <constraint firstItem="afg-lC-6Ps" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="50" id="Gxi-CM-r6Z"/>
+                            <constraint firstItem="UgL-hI-zsM" firstAttribute="top" secondItem="afg-lC-6Ps" secondAttribute="bottom" constant="40" id="J5K-p9-Yow"/>
                             <constraint firstItem="Fea-Lg-bWU" firstAttribute="top" secondItem="L1s-We-d0d" secondAttribute="top" constant="40" id="LmB-Ki-6f4"/>
-                            <constraint firstItem="afg-lC-6Ps" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="50" id="N0u-TB-5nL"/>
-                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="Hx8-yz-DNx" secondAttribute="trailing" constant="60" id="OqH-ka-qwr"/>
-                            <constraint firstItem="Dwg-zx-bEt" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="PwO-qG-e9d"/>
-                            <constraint firstItem="Dwg-zx-bEt" firstAttribute="centerX" secondItem="kXk-BC-ebE" secondAttribute="centerX" id="PxA-yQ-nGd"/>
-                            <constraint firstItem="Hx8-yz-DNx" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="XXc-Es-cO7"/>
-                            <constraint firstItem="Dwg-zx-bEt" firstAttribute="top" secondItem="Fea-Lg-bWU" secondAttribute="bottom" constant="40" id="fwS-Ur-G5K"/>
-                            <constraint firstItem="UgL-hI-zsM" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="hEl-tp-GM9"/>
-                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="UgL-hI-zsM" secondAttribute="trailing" constant="60" id="khE-ft-ZSj"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="afg-lC-6Ps" secondAttribute="trailing" constant="50" id="Tei-Yz-4TN"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="Dwg-zx-bEt" secondAttribute="trailing" constant="60" id="W9F-8V-YRi"/>
+                            <constraint firstItem="UgL-hI-zsM" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="WQO-vZ-ln5"/>
+                            <constraint firstItem="e48-Lu-Dw9" firstAttribute="top" secondItem="Hx8-yz-DNx" secondAttribute="bottom" constant="32" id="Wa6-Ca-tyJ"/>
+                            <constraint firstItem="e48-Lu-Dw9" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="Xnt-MT-1eE"/>
+                            <constraint firstItem="c3a-s7-v2l" firstAttribute="top" secondItem="UgL-hI-zsM" secondAttribute="bottom" constant="37" id="bfL-db-lTT"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="e48-Lu-Dw9" secondAttribute="trailing" constant="60" id="h5D-aw-q1O"/>
+                            <constraint firstItem="Dwg-zx-bEt" firstAttribute="top" secondItem="Fea-Lg-bWU" secondAttribute="bottom" constant="15" id="jgK-kJ-RbE"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="bottom" secondItem="c3a-s7-v2l" secondAttribute="bottom" constant="20" id="kTr-Q3-wcV"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="UgL-hI-zsM" secondAttribute="trailing" constant="60" id="kYp-SE-E3i"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="c3a-s7-v2l" secondAttribute="trailing" constant="20" id="mFo-dI-3F3"/>
                             <constraint firstItem="Fea-Lg-bWU" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="ovB-Pm-V5b"/>
-                            <constraint firstItem="UgL-hI-zsM" firstAttribute="top" secondItem="afg-lC-6Ps" secondAttribute="bottom" constant="40" id="pY6-jN-ejg"/>
+                            <constraint firstItem="Hx8-yz-DNx" firstAttribute="top" secondItem="Dwg-zx-bEt" secondAttribute="bottom" constant="36" id="rTO-RK-z2p"/>
+                            <constraint firstItem="afg-lC-6Ps" firstAttribute="top" secondItem="e48-Lu-Dw9" secondAttribute="bottom" constant="24" id="scc-8z-oMd"/>
+                            <constraint firstItem="Dwg-zx-bEt" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="svM-1A-FNU"/>
+                            <constraint firstItem="Hx8-yz-DNx" firstAttribute="leading" secondItem="L1s-We-d0d" secondAttribute="leading" constant="60" id="vVg-vs-XYi"/>
+                            <constraint firstItem="L1s-We-d0d" firstAttribute="trailing" secondItem="Hx8-yz-DNx" secondAttribute="trailing" constant="60" id="x02-h4-I9C"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Storage" id="gx3-RC-QrM"/>
+                    <navigationItem key="navigationItem" title="Storage" id="gx3-RC-QrM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="nxr-MD-anQ">
+                            <connections>
+                                <action selector="updateTableView:" destination="cPT-JD-7Ky" id="GCJ-HJ-BKk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="clearStorageButton" destination="UgL-hI-zsM" id="cQI-e3-9Tu"/>
                         <outlet property="downloadButton" destination="Hx8-yz-DNx" id="a1p-PE-2ar"/>
+                        <outlet property="saveButton" destination="e48-Lu-Dw9" id="8fq-0R-wVB"/>
                         <outlet property="storageStatusLabel" destination="Dwg-zx-bEt" id="9YG-jo-XqX"/>
+                        <outlet property="storageTableView" destination="c3a-s7-v2l" id="IFk-sy-1aq"/>
                         <outlet property="tipToClearLabel" destination="afg-lC-6Ps" id="5sN-1I-1uR"/>
                     </connections>
                 </viewController>

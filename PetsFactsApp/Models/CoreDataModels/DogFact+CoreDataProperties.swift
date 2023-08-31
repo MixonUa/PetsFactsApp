@@ -16,5 +16,5 @@ extension DogFact {
     @NSManaged public var name: String
     @NSManaged public var fact: String
     @NSManaged public var color: String?
-    @NSManaged public var likes: Int
+    @NSManaged public var likes: Int64
 }
