@@ -10,17 +10,16 @@
 		57222905585BCB1DDE37F7E7 /* Pods_PetsFactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6E401B1844AD9774B63EB7 /* Pods_PetsFactsApp.framework */; };
 		930D6B1E2A52C42600FA179E /* NetworkDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D6B1D2A52C42600FA179E /* NetworkDownloadManager.swift */; };
 		9319DEFE2A51717200A622E7 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319DEFD2A51717200A622E7 /* StorageViewController.swift */; };
-		9319DF182A517AC300A622E7 /* DogFact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319DF142A517AC300A622E7 /* DogFact+CoreDataProperties.swift */; };
-		9319DF1A2A517AC300A622E7 /* CatFact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319DF162A517AC300A622E7 /* CatFact+CoreDataProperties.swift */; };
 		9319DF202A517B6900A622E7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319DF1F2A517B6900A622E7 /* CoreDataManager.swift */; };
+		931E493D2A95EF3A00B689D4 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E493C2A95EF3A00B689D4 /* InfoCell.swift */; };
 		9325515C2A48176F00BA02EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325515B2A48176F00BA02EF /* AppDelegate.swift */; };
 		9325515E2A48176F00BA02EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325515D2A48176F00BA02EF /* SceneDelegate.swift */; };
 		932551632A48176F00BA02EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932551612A48176F00BA02EF /* Main.storyboard */; };
-		932551662A48176F00BA02EF /* PetsFactsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 932551642A48176F00BA02EF /* PetsFactsApp.xcdatamodeld */; };
 		932551682A48177000BA02EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932551672A48177000BA02EF /* Assets.xcassets */; };
 		9325516B2A48177000BA02EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932551692A48177000BA02EF /* LaunchScreen.storyboard */; };
 		9325517E2A481A3F00BA02EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325517D2A481A3F00BA02EF /* MainViewController.swift */; };
 		932551812A481A5700BA02EF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932551802A481A5700BA02EF /* InformationViewController.swift */; };
+		932820902AA07BD200EC7C7C /* CatFact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9328208F2AA07BD200EC7C7C /* CatFact+CoreDataClass.swift */; };
 		933F47822A48D17700C91770 /* NetworkFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F47812A48D17700C91770 /* NetworkFetchService.swift */; };
 		934B103B2A4C6EE5002F3BCA /* FactsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B103A2A4C6EE5002F3BCA /* FactsCollectionView.swift */; };
 		934B10442A4C71C0002F3BCA /* FactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B10432A4C71C0002F3BCA /* FactCollectionViewCell.swift */; };
@@ -34,9 +33,8 @@
 		65A2F02A30ECD355DA13D1F9 /* Pods-PetsFactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetsFactsApp.debug.xcconfig"; path = "Target Support Files/Pods-PetsFactsApp/Pods-PetsFactsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		930D6B1D2A52C42600FA179E /* NetworkDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDownloadManager.swift; sourceTree = "<group>"; };
 		9319DEFD2A51717200A622E7 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
-		9319DF142A517AC300A622E7 /* DogFact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DogFact+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9319DF162A517AC300A622E7 /* CatFact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CatFact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9319DF1F2A517B6900A622E7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		931E493C2A95EF3A00B689D4 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		932551582A48176F00BA02EF /* PetsFactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetsFactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9325515B2A48176F00BA02EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9325515D2A48176F00BA02EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +45,7 @@
 		9325516C2A48177000BA02EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9325517D2A481A3F00BA02EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		932551802A481A5700BA02EF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		9328208F2AA07BD200EC7C7C /* CatFact+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CatFact+CoreDataClass.swift"; path = "/Users/mihailfrolov/Documents/GitHub/CatFactRev/PetsFactsApp/CatFact+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		933F47812A48D17700C91770 /* NetworkFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchService.swift; sourceTree = "<group>"; };
 		934B103A2A4C6EE5002F3BCA /* FactsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionView.swift; sourceTree = "<group>"; };
 		934B10432A4C71C0002F3BCA /* FactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -79,8 +78,6 @@
 		9319DF0A2A517A6900A622E7 /* CoreDataModels */ = {
 			isa = PBXGroup;
 			children = (
-				9319DF162A517AC300A622E7 /* CatFact+CoreDataProperties.swift */,
-				9319DF142A517AC300A622E7 /* DogFact+CoreDataProperties.swift */,
 			);
 			path = CoreDataModels;
 			sourceTree = "<group>";
@@ -106,6 +103,7 @@
 		9325515A2A48176F00BA02EF /* PetsFactsApp */ = {
 			isa = PBXGroup;
 			children = (
+				9328208F2AA07BD200EC7C7C /* CatFact+CoreDataClass.swift */,
 				9325517B2A4819F500BA02EF /* Models */,
 				9325517A2A4819EA00BA02EF /* Views */,
 				932551792A4819D800BA02EF /* Controllers */,
@@ -165,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				934B10432A4C71C0002F3BCA /* FactCollectionViewCell.swift */,
+				931E493C2A95EF3A00B689D4 /* InfoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -292,22 +291,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932820902AA07BD200EC7C7C /* CatFact+CoreDataClass.swift in Sources */,
 				9325515C2A48176F00BA02EF /* AppDelegate.swift in Sources */,
 				9325515E2A48176F00BA02EF /* SceneDelegate.swift in Sources */,
 				9319DEFE2A51717200A622E7 /* StorageViewController.swift in Sources */,
 				933F47822A48D17700C91770 /* NetworkFetchService.swift in Sources */,
 				930D6B1E2A52C42600FA179E /* NetworkDownloadManager.swift in Sources */,
-				9319DF1A2A517AC300A622E7 /* CatFact+CoreDataProperties.swift in Sources */,
-				932551662A48176F00BA02EF /* PetsFactsApp.xcdatamodeld in Sources */,
 				9325517E2A481A3F00BA02EF /* MainViewController.swift in Sources */,
 				932551812A481A5700BA02EF /* InformationViewController.swift in Sources */,
 				934B103B2A4C6EE5002F3BCA /* FactsCollectionView.swift in Sources */,
 				93DB054F2A48C80E00233DAE /* NetworkManagerAlamofire.swift in Sources */,
+				931E493D2A95EF3A00B689D4 /* InfoCell.swift in Sources */,
 				934B10442A4C71C0002F3BCA /* FactCollectionViewCell.swift in Sources */,
 				93DB05492A48C55100233DAE /* CatModell.swift in Sources */,
 				9319DF202A517B6900A622E7 /* CoreDataManager.swift in Sources */,
 				93DB054C2A48C55B00233DAE /* DogModel.swift in Sources */,
-				9319DF182A517AC300A622E7 /* DogFact+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
